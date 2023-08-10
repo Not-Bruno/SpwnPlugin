@@ -1,0 +1,6 @@
+main: de.bruno.spwn.main.Main
+name: SpawnPlugin
+version: 1.0
+
+commands:
+   
