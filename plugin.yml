@@ -3,4 +3,15 @@ name: SpawnPlugin
 version: 1.0
 
 commands:
-   
+   h:
+      description: Bring you back to Spawn!
+   hub:
+      description: Bring you back to Spawn! 
+   l:
+      description: Bring you back to Spawn!
+   lobby:
+      description: Bring you back to Spawn!
+   s:
+      description: Bring you back to Spawn!
+   spawn:
+      description: Bring you back to Spawn!
