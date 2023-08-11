@@ -35,6 +35,9 @@ public class Main extends JavaPlugin {
 			manager.registerEvents(new JoinListener(), this);
 			
 		}
+		
+		System.out.println("[LOG] - SpawnPlugin loaded successfully");
+		
 	}
 
 	private void SetupConfig(FileConfiguration config) {
