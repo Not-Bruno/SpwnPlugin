@@ -91,7 +91,7 @@ public class SetupCommand implements CommandExecutor{
 				+ Color.R_GREEN + "> " + Color.ORANGE_BOLD + "Spawn Command Enabled - " + Color.R_ORANGE + config.getString("Spawn.Command.Enabled") + "\n"
 				+ Color.R_GREEN + "> " + Color.ORANGE_BOLD + "Teleport Message Enabled - " + Color.R_ORANGE + config.getString("Teleport.Message.Enabled") + "\n"
 				+ Color.R_GREEN + "> " + Color.ORANGE_BOLD + "Teleport Message - " + Color.R_ORANGE + config.getString("Teleport.Message") + "\n"
-				+ "";
+						+ "";
 		return message;
 	}
 	
