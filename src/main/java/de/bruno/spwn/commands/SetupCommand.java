@@ -42,7 +42,7 @@ public class SetupCommand implements CommandExecutor{
 							player.sendMessage(Color.GREEN + "Spawn command disabled! " + Color.RED_BOLD + "Please reload the Server!");
 						}
 						
-						// Teleport Message
+						// Teleport Message enable disable
 					} else if (args[1].equalsIgnoreCase("tpmsg")) {
 						if (args[2].equalsIgnoreCase("enable")) {
 							config.set("Teleport.Message.Enabled", true);
@@ -52,6 +52,13 @@ public class SetupCommand implements CommandExecutor{
 							player.sendMessage(Color.GREEN + "Teleport Message disabled");
 						} else if (args.length>2) {
 							// Teleport message
+							StringBuffer buffer = new StringBuffer();
+							for (int i=3; i<args.length; i++) {
+								buffer.append(args[i]);
+							}
+							String newMessage = buffer.toString();
+							config.set("Teleport.Message", newMessage);
+							player.sendMessage(Color.GREEN + "Teleport message updated!");
 						}
 						
 						// enable or Disable Plugin
